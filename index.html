@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="./pyscript-runtime/pyscript.css" />
+    <script defer src="./pyscript-runtime/pyscript.js"></script>
+    <py-config>
+      - autoclose_loader: true
+      - runtimes:
+        -
+          src: "./pyscript-runtime/pyodide.js"
+          name: pyodide-0.20
+          lang: python
+    </py-config>
+  </head>
+  <body>
+    <py-script src="./run.py"></py-script>
+  </body>
+</html>
